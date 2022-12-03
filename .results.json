@@ -2,12 +2,12 @@
   "stats": {
     "suites": 5,
     "tests": 13,
-    "passes": 13,
+    "passes": 11,
     "pending": 0,
-    "failures": 0,
-    "start": "2022-12-03T21:15:12.452Z",
-    "end": "2022-12-03T21:15:12.708Z",
-    "duration": 256
+    "failures": 2,
+    "start": "2022-12-03T21:47:25.675Z",
+    "end": "2022-12-03T21:47:25.942Z",
+    "duration": 267
   },
   "tests": [
     {
@@ -27,9 +27,15 @@
     {
       "title": "calculates distances below 42nd street",
       "fullTitle": "index.js distanceFromHqInBlocks() calculates distances below 42nd street",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected -8 to equal 8",
+        "showDiff": true,
+        "actual": "-8",
+        "expected": "8",
+        "stack": "AssertionError: expected -8 to equal 8\n    at Context.<anonymous> (test/indexTest.js:12:45)\n    at processImmediate (node:internal/timers:466:21)"
+      }
     },
     {
       "title": "returns a distance in feet",
@@ -50,7 +56,13 @@
       "fullTitle": "index.js distanceFromHqInFeet() calculates distances below 42nd street",
       "duration": 0,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected -2112 to equal 2112",
+        "showDiff": true,
+        "actual": "-2112",
+        "expected": "2112",
+        "stack": "AssertionError: expected -2112 to equal 2112\n    at Context.<anonymous> (test/indexTest.js:26:43)\n    at processImmediate (node:internal/timers:466:21)"
+      }
     },
     {
       "title": "returns the distance travelled in feet",
@@ -103,7 +115,34 @@
     }
   ],
   "pending": [],
-  "failures": [],
+  "failures": [
+    {
+      "title": "calculates distances below 42nd street",
+      "fullTitle": "index.js distanceFromHqInBlocks() calculates distances below 42nd street",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected -8 to equal 8",
+        "showDiff": true,
+        "actual": "-8",
+        "expected": "8",
+        "stack": "AssertionError: expected -8 to equal 8\n    at Context.<anonymous> (test/indexTest.js:12:45)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    },
+    {
+      "title": "calculates distances below 42nd street",
+      "fullTitle": "index.js distanceFromHqInFeet() calculates distances below 42nd street",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected -2112 to equal 2112",
+        "showDiff": true,
+        "actual": "-2112",
+        "expected": "2112",
+        "stack": "AssertionError: expected -2112 to equal 2112\n    at Context.<anonymous> (test/indexTest.js:26:43)\n    at processImmediate (node:internal/timers:466:21)"
+      }
+    }
+  ],
   "passes": [
     {
       "title": "returns a distance in blocks",
@@ -120,13 +159,6 @@
       "err": {}
     },
     {
-      "title": "calculates distances below 42nd street",
-      "fullTitle": "index.js distanceFromHqInBlocks() calculates distances below 42nd street",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
       "title": "returns a distance in feet",
       "fullTitle": "index.js distanceFromHqInFeet() returns a distance in feet",
       "duration": 0,
@@ -136,13 +168,6 @@
     {
       "title": "returns a distance in feet",
       "fullTitle": "index.js distanceFromHqInFeet() returns a distance in feet",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "calculates distances below 42nd street",
-      "fullTitle": "index.js distanceFromHqInFeet() calculates distances below 42nd street",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
